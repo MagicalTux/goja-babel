@@ -94,7 +94,7 @@ func compileBabel() error {
 		return err
 	}
 
-	babelProg, err = goja.Compile("babel.js", string(babelData), true)
+	babelProg, err = goja.Compile("babel.js", string(babelData), false)
 	if err != nil {
 		return err
 	}
